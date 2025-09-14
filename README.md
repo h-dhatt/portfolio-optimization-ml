@@ -1,28 +1,26 @@
-# Project 8 — Portfolio Optimization (Mean–Variance, Risk Parity)
+# Portfolio Optimization with Machine Learning
 
-**Goal:** Construct optimal portfolios on synthetic assets with:
-- Global minimum variance
-- Max Sharpe (with risk-free rate)
-- Naive risk parity (equal risk contribution) via iterative solver
+This project applies **modern portfolio theory** and machine learning techniques to optimize risk–return tradeoffs in asset allocation. It demonstrates how quantitative methods can guide investment strategies.
 
-## Structure
-```
-Project8_Portfolio_Optimization/
-  ├─ data/
-  │   └─ returns.csv
-  ├─ outputs/
-  ├─ src/
-  │   ├─ generate_returns.py
-  │   ├─ mean_variance.py
-  │   └─ risk_parity.py
-  ├─ requirements.txt
-  └─ README.md
-```
+## Methods
+- Implemented classic approaches:
+  - Mean–Variance Optimization (Markowitz)
+  - Efficient Frontier construction
+- Incorporated regularization and shrinkage estimators for covariance matrices
+- Explored extensions with clustering and machine learning for asset grouping
+- Backtested strategies on historical financial data
 
-## Quickstart
-```bash
-pip install -r requirements.txt
-python src/generate_returns.py
-python src/mean_variance.py
-python src/risk_parity.py
-```
+## Results
+- Machine learning–based covariance estimators improved stability of optimized portfolios.
+- Efficient frontier plots illustrate clear tradeoffs between risk and return.
+- Backtests showed more consistent performance versus naive equal-weighted allocation.
+
+## Repository Structure
+- `data/`: Sample datasets
+- `notebooks/`: Jupyter notebooks with optimization experiments
+- `src/`: Python scripts for optimization and backtesting
+- `results/`: Efficient frontier plots, backtest performance
+- `README.md`: Project documentation
+
+## Keywords
+Finance, Portfolio Optimization, Efficient Frontier, Quantitative Investing, Machine Learning
